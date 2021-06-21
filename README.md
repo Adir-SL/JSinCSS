@@ -13,3 +13,7 @@ button:active {
   content: "alert('Works!');";
 }
 ```
+# Keep in mind
+Everything decalred in CSS will run in its appropriate state, meaning ```content``` inside ```button``` will run when the button is loaded and unless told otherwise will only run once.
+
+When declaring ```content``` inside ```button:active``` it will run when the button is clicked and, unless told otherwise, it will run everytime the user clicks that button.
