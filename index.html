@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS in CSS</title>
+    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+</head>
+<body>
+    <h1>JSinCSS</h1>
+    A JS library to embed simple JS snippets in CSS files.
+
+    <h2>Getting started</h2>
+    The easiest way to get started is by adding the script tag in your document head, like so:
+    <pre>
+        <code>
+&lt;script src="https://adir-sl.github.io/JSinCSS/jsincss.js"&gt;&lt;/script&gt;
+        </code>
+    </pre>
+
+    After that, you can add to your CSS declaration a new ```content``` property that can hold any JavaScript you'd like to run, for example:
+    <pre>
+        <code>
+button:active {
+    content: "alert('Works!');";
+}
+        </code>
+    </pre>
+    <h2>Keep in mind</h2>
+    Everything decalred in CSS will run in its appropriate state, meaning ```content``` inside ```button``` will run when the button is loaded and unless told otherwise will only run once.
+
+    When declaring ```content``` inside ```button:active``` it will run when the button is clicked and, unless told otherwise, it will run everytime the user clicks that button.
+
+    The kind of quotation marks matters! Don't write it backwards or it might break. First the ```" "``` marks and later the ```' '``` marks, NOT the other way around.
+</body>
+</html>
