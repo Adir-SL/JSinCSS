@@ -8,7 +8,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="text-gray-800">
-    <div class="bg-gray-800 text-yellow-300 p-12">
+    <div class="bg-gray-800 text-yellow-400 p-12">
         <h1 class="text-9xl">JSinCSS</h1>
         <p class="text-2xl mb-4">Embedding simple JS snippets in CSS files.</p>
     </div>
@@ -16,21 +16,13 @@
     <div class="m-12">
         <h2 class="text-3xl">Getting started</h2>
         The easiest way to get started is by adding the script tag in your document head, like so:
-        <pre>
-            <code>
-    &lt;script src="https://adir-sl.github.io/JSinCSS/jsincss.js"&gt;&lt;/script&gt;
-            </code>
-        </pre>
+<pre class="bg-gray-800 text-white p-5 rounded-md mt-4 mb-4"><code>&lt;script src="<span class="text-yellow-400">https://adir-sl.github.io/JSinCSS/jsincss.js</span>"&gt;&lt;/script&gt;</code></pre>
 
         After that, you can add to your CSS declaration a new ```content``` property that can hold any JavaScript you'd like to run, for example:
-        <pre>
-            <code>
-    button:active {
-        content: "alert('Works!');";
-    }
-            </code>
-        </pre>
-        <h2 class="text-3xl">Keep in mind</h2>
+        <pre class="bg-gray-800 text-white p-5 rounded-md mt-4 mb-4"><code>   button:active {
+        content: "<span class="text-yellow-400">alert('Works!');</span>";
+    }</code></pre>
+        <h2 class="text-3xl mt-4">Keep in mind</h2>
         Everything decalred in CSS will run in its appropriate state, meaning ```content``` inside ```button``` will run when the button is loaded and unless told otherwise will only run once.
 
         When declaring ```content``` inside ```button:active``` it will run when the button is clicked and, unless told otherwise, it will run everytime the user clicks that button.
