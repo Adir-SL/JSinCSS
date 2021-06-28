@@ -7,8 +7,8 @@
     <title>JS in CSS</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="text-gray-800">
-    <div class="bg-gray-800 text-yellow-400 p-12 pb-5 flex flex-col items-center justify-center">
+<body class="text-gray-800 flex flex-col items-center justify-center">
+    <div class="bg-gray-800 text-yellow-400 p-12 pb-5 flex flex-col items-center justify-center w-full">
         <h1 class="text-9xl">JSinCSS</h1>
         <p class="text-2xl mb-4">Embedding simple JS snippets in CSS files.</p>
         <div class="flex gap-5 ml-16 w-96 justify-end">
@@ -17,7 +17,7 @@
         </div>
     </div>
 
-    <div class="m-12">
+    <div class="m-12 max-w-2xl">
         <h2 class="text-3xl font-medium">Getting started</h2>
         The easiest way to get started is by adding the script tag in your document head, like so:
 <pre class="bg-gray-800 text-white p-5 rounded-md my-4"><code>&lt;script src="<span class="text-yellow-400">https://adir-sl.github.io/JSinCSS/jsincss.js</span>"&gt;&lt;/script&gt;</code></pre>
