@@ -5,13 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JS in CSS</title>
-    <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>JSinCSS</h1>
-    A JS library to embed simple JS snippets in CSS files.
+<body class="text-gray-800 m-12">
+    <div class="text-blue-500">
+        <h1 class="text-9xl">JSinCSS</h1>
+        <p class="text-2xl mb-4">Embedding simple JS snippets in CSS files.</p>
+    </div>
 
-    <h2>Getting started</h2>
+    <h2 class="text-3xl">Getting started</h2>
     The easiest way to get started is by adding the script tag in your document head, like so:
     <pre>
         <code>
@@ -27,7 +29,7 @@ button:active {
 }
         </code>
     </pre>
-    <h2>Keep in mind</h2>
+    <h2 class="text-3xl">Keep in mind</h2>
     Everything decalred in CSS will run in its appropriate state, meaning ```content``` inside ```button``` will run when the button is loaded and unless told otherwise will only run once.
 
     When declaring ```content``` inside ```button:active``` it will run when the button is clicked and, unless told otherwise, it will run everytime the user clicks that button.
