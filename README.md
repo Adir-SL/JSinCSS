@@ -18,4 +18,4 @@ Everything decalred in CSS will run in its appropriate state, meaning ```content
 
 When declaring ```content``` inside ```button:active``` it will run when the button is clicked and, unless told otherwise, it will run everytime the user clicks that button.
 
-The kind of quotation marks matters! Don't write it backwards or it might break. First the ```" "``` marks and later the ```' '``` marks, NOT the other way around.
+The kind of quotation marks matters! Don't write it backwards or it might break. First the ```" "``` marks and only than the ```' '``` marks, NOT the other way around.
