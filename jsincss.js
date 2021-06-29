@@ -11,9 +11,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
         x[i].addEventListener("mousedown", function(){
-            js = window.getComputedStyle(this).content;
-            js = js.slice(1,-1)
-            eval(js);
+            setTimeout(function(){
+                js = window.getComputedStyle(this).content;
+                js = js.slice(1,-1)
+                eval(js);
+            }, 100);
         });
 
     }
