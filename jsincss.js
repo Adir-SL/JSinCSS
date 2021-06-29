@@ -3,23 +3,26 @@ window.addEventListener('DOMContentLoaded', (event) => {
     var i;
     for (i = 0; i < x.length; i++) {
         
-                js = window.getComputedStyle(x[i]).content;
+        js = window.getComputedStyle(x[i]).content;
+        js = js.slice(1,-1)
+        if(js !== 'orma'){
+            eval(js);
+        }
+
+        if (navigator.userAgent.indexOf("Firefox") !== -1){
+            console.log("up");
+            x[i].addEventListener("mouseup", function(){
+                js = window.getComputedStyle(this).content;
                 js = js.slice(1,-1)
-                if(js !== 'orma'){
-                    eval(js);
-                }
-
-
-        x[i].addEventListener("mousedown", function(){
-            js = window.getComputedStyle(this).content;
-            js = js.slice(1,-1)
-            eval(js);
-        });
-        
-        x[i].addEventListener("mouseup", function(){
-            js = window.getComputedStyle(this).content;
-            js = js.slice(1,-1)
-            eval(js);
-        });
+                eval(js);
+            });
+        }else{
+            console.log("down");
+            x[i].addEventListener("mousedown", function(){
+                js = window.getComputedStyle(this).content;
+                js = js.slice(1,-1)
+                eval(js);
+            });
+        }
     }
 });
