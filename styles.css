@@ -2,7 +2,4 @@
     .downloadLink{
         display: none;
     }
-    body .stickyHeader{
-        width: unset !important;
-    }
 }
