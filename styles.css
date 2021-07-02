@@ -3,6 +3,6 @@
         display: none;
     }
     body .stickyHeader{
-        width: 100vw !important;
+        width: unset !important;
     }
 }
