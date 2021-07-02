@@ -10,14 +10,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
         }
 
         if (navigator.userAgent.indexOf("Firefox") !== -1){
-            console.log("up");
             x[i].addEventListener("mouseup", function(){
                 js = window.getComputedStyle(this).content;
                 js = js.slice(1,-1)
                 eval(js);
             });
         }else{
-            console.log("down");
             x[i].addEventListener("mousedown", function(){
                 js = window.getComputedStyle(this).content;
                 js = js.slice(1,-1)
