@@ -5181,3 +5181,17 @@ pre, code, kbd, samp { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
 .-my-52 { margin-top: -13rem; margin-bottom: -13rem; }
 .-my-56 { margin-top: -14rem; margin-bottom: -14rem; }
 img, svg, video, canvas, audio, iframe, embed, object { display: block; vertical-align: middle; }
+.text-right { text-align: right; }
+.pt-5 { padding-top: 1.25rem; }
+.pt-52 { padding-top: 13rem; }
+.pt-56 { padding-top: 14rem; }
+.underline { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+.group:hover .group-hover\:underline { text-decoration: underline; }
+.group:hover .group-hover\:no-underline { text-decoration: none; }
+.focus-within\:underline:focus-within { text-decoration: underline; }
+.focus-within\:no-underline:focus-within { text-decoration: none; }
+.hover\:underline:hover { text-decoration: underline; }
+.hover\:no-underline:hover { text-decoration: none; }
+.focus\:underline:focus { text-decoration: underline; }
+.focus\:no-underline:focus { text-decoration: none; }
